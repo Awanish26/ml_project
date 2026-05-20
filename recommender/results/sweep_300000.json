@@ -1,0 +1,76 @@
+{
+  "untied_t0.05": {
+    "config": {
+      "tie_embeddings": false,
+      "temperature": 0.05
+    },
+    "best_valid": {
+      "epoch": 4,
+      "loss": 7.8143,
+      "users": 50000,
+      "hit@10": 0.0141,
+      "ndcg@10": 0.0076
+    },
+    "epochs_run": 7
+  },
+  "tied_t0.05": {
+    "config": {
+      "tie_embeddings": true,
+      "temperature": 0.05
+    },
+    "best_valid": {
+      "epoch": 8,
+      "loss": 7.701,
+      "users": 50000,
+      "hit@10": 0.0143,
+      "ndcg@10": 0.0076
+    },
+    "epochs_run": 11
+  },
+  "tied_t0.1": {
+    "config": {
+      "tie_embeddings": true,
+      "temperature": 0.1
+    },
+    "best_valid": {
+      "epoch": 7,
+      "loss": 7.7558,
+      "users": 50000,
+      "hit@10": 0.0145,
+      "ndcg@10": 0.0078
+    },
+    "epochs_run": 10
+  },
+  "tied_t0.1_wd1e-4_do0.2": {
+    "config": {
+      "tie_embeddings": true,
+      "temperature": 0.1,
+      "weight_decay": 0.0001,
+      "dropout": 0.2
+    },
+    "best_valid": {
+      "epoch": 8,
+      "loss": 7.782,
+      "users": 50000,
+      "hit@10": 0.0148,
+      "ndcg@10": 0.0077
+    },
+    "epochs_run": 11
+  },
+  "untied_t0.1_wd1e-4_do0.2": {
+    "config": {
+      "tie_embeddings": false,
+      "temperature": 0.1,
+      "weight_decay": 0.0001,
+      "dropout": 0.2
+    },
+    "best_valid": {
+      "epoch": 3,
+      "loss": 8.07,
+      "users": 50000,
+      "hit@10": 0.0137,
+      "ndcg@10": 0.0072
+    },
+    "epochs_run": 6
+  }
+}
